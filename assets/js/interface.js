@@ -131,6 +131,40 @@ $('.conf-close').on('click', function(e) {
 		});
 	}
 /*-------------------------------------------------------------------------------
+  Google map
+	-------------------------------------------------------------------------------*/
+ 		
+	if ($('#js-gmap').length > 0){
+		var map;
+		map = new GMaps({
+			el: '#js-gmap',
+			lat: 24.7859146,
+			lng:120.996735,
+			scrollwheel:false,
+			zoom: 12,
+			zoomControl : true,
+			panControl : false,
+			streetViewControl : false,
+			mapTypeControl: false,
+			overviewMapControl: false,
+			clickable: false
+		});
+		//var image = 'assets/images/800x510.jpg';
+		var infoWindow = new google.maps.InfoWindow({
+		});
+		map.addMarker({
+			lat: 24.7859146,
+			lng:120.996735,
+			animation: google.maps.Animation.DROP,
+			verticalAlign: 'bottom',
+			horizontalAlign: 'center',
+			backgroundColor: '#d3cfcf',
+			infoWindow:{
+				content: '<div class="map-info">National Chiao Tung University, Hsinchu, Taiwan</div>'
+			}
+		});
+	}
+/*-------------------------------------------------------------------------------
   Paypal Form
 	-------------------------------------------------------------------------------*/
 	
