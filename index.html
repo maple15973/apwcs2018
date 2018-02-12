@@ -118,17 +118,19 @@
 <!-- /Header --> 
 
 <!-- Banners -->
-<section id="banner" class="banner-section"> 
+<section id="banner" class="banner-section" > 
   <!-- Banner Tagline -->
   <div class="banner-fixed">
     <div class="container">
       <div class="banner-content">
-        <div class="banner-tagline text-center">
+        <div class="banner-tagline text-center" >
           <h1> APWCS2018</h1>
           <p> 2018/8/22-2018/8/24, NCTU, Taiwan</p>
         </div>
       </div>
     </div>
+    <div id="particle-canvas" style="position: absolute; top:0; width: 100%; height: 100vh"></div>
+    
   </div>
   <!-- /Banners Tagline --> 
   
@@ -233,7 +235,7 @@
 
 <!-- Call for paper -->
 <section class="primary-bg less-padding">
-    <div class="container">   
+    <div class="container" >   
         <div class="row"> 
 		  <!-- Heading -->
 		  <div class="col-md-12">
@@ -1189,9 +1191,9 @@
   <div id="map" >
     <div id="js-gmap" class="gmap js-gmap" style="height:350px"></div>
   </div>
-<!-- Map --> 
-
-<!--Footer-->
+<!-- Canvas --> 
+    
+  <!--Footer-->
 <footer class="secondary-bg">
   <div class="copyright fourth-bg">
     <div class="container">
@@ -1216,6 +1218,18 @@
 <script src="assets/js/owl.carousel.min.js"></script> 
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script> 
 <script src="assets/js/gmaps.min.js"></script> 
+<script type="text/javascript" src="assets/js/particle-network.js"></script>
+    <script type="text/javascript">
+      var canvasDiv = document.getElementById('particle-canvas');
+      var options = {
+        particleColor: '#888',
+        //background: 'images/home-bg.png',
+        interactive: true,
+        speed: 'slow',
+        density: 'medium'
+      };
+      var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    </script>
 <!-- Countdown--> 
 <script src="assets/js/jquery.countdown.min.js"></script>
 </body>
