@@ -6,11 +6,11 @@
 <meta name="application-name" content="APWCS2018">
 <meta name="author" content="Cober tsai, cober.tsai@gmail.com">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="keywords" content="APWCS NECTU Hsinchu">
+<meta name="keywords" content="APWCS2018 NCTU Hsinchu">
 <meta name="description" content="apwcs2018">
 <meta property="og:title" content="APWCS2018">
 <meta property="og:type" content="website">
-<title>APWCS@HSINCHU,TAIWAN</title>
+<title>APWCS2018@HSINCHU,TAIWAN</title>
 
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
@@ -26,7 +26,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="assets/switcher/css/pink.css" title="pink" media="all" /> -->
 <!-- <link rel="stylesheet" type="text/css" href="assets/switcher/css/green.css" title="green" media="all" /> -->
 <!-- <link rel="stylesheet" type="text/css" href="assets/switcher/css/purple.css" title="purple" media="all" /> -->
-        
+
 <!--FontAwesome Font Style -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 <!-- Fav and touch icons -->
@@ -64,21 +64,17 @@
         <ul class="nav navbar-nav">
           <li><a href="#home" class="js-target-scroll">Home</a></li>
           <li><a href="#about" class="js-target-scroll">About </a></li>
+          <li><a href="#cfp" class="js-target-scroll">CFP</a></li>
+          <li><a href="#submission" class="js-target-scroll">Submissions</a></li>
+          <li><a href="#registration" class="js-target-scroll">Registration</a></li>
+          <li><a href="#committees" class="js-target-scroll">Committees</a></li>
           <li><a href="#schedule" class="js-target-scroll">Schedule</a></li>
           <li><a href="#speakers" class="js-target-scroll">Speakers</a></li>
-          <li><a href="#pricing" class="js-target-scroll">Pricing</a></li>
-          <li><a href="#faq" class="js-target-scroll">FAQ</a></li>
-		  <li class="dropdown">
-          		<a href="#blog" class="js-target-scroll">Blog</a>
-				<span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></span>
-                <ul class="dropdown-menu">
-                  <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                  <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                  <li><a href="blog-grid.html">Blog Grid Style</a></li>
-                  <li><a href="welcome.html">Welcome</a></li>
-                </ul>
-              </li>
-          <li><a href="resources.html">Resources</a></li>
+          <li><a href="#keynote" class="js-target-scroll">Keynote</a></li>
+          <li><a href="#accommodation" class="js-target-scroll">Accommodation</a></li>
+          <li><a href="#sponsors" class="js-target-scroll">Sponsors</a></li>
+          <li><a href="#venue" class="js-target-scroll">Venue</a></li>
+          <li><a href="#faq" class="js-target-scroll">Information for Authors</a></li>
         </ul>
       </div>
     </div>
@@ -94,7 +90,7 @@
       <div class="col-xs-4 col-sm-2 col-sm-push-5">
         <div class="logo"> 
           <a href="index.html">
-            <img src="assets/images/logo.png" alt="samazin" width="140" height="36">
+            <img src="assets/images/logo.png" alt="apwcs2018" width="200" height="36">
           </a>
         </div>
       </div>
@@ -119,18 +115,18 @@
 
 <!-- Banners -->
 <section id="banner" class="banner-section" > 
+  
   <!-- Banner Tagline -->
   <div class="banner-fixed">
-    <div class="container">
+    <div id="particle-canvas" style="position: absolute; top:0; width: 100%; height: 100vh"></div>
+    <div class="container" style="z-index: 3;">
       <div class="banner-content">
         <div class="banner-tagline text-center" >
-          <h1> APWCS2018</h1>
-          <p> 2018/8/22-2018/8/24, NCTU, Taiwan</p>
+          <h1> The 15<sup>th</sup> IEEE Vehicular Technology Society<br>Asia Pacific Wireless Communications Symposium <br>(IEEE VTS APWCS 2018)</h1>
+          <p>National Chiao Tung University, Hsinchu, Taiwan, August 22-24, 2018</p>
         </div>
       </div>
-    </div>
-    <div id="particle-canvas" style="position: absolute; top:0; width: 100%; height: 100vh"></div>
-    
+    </div> 
   </div>
   <!-- /Banners Tagline --> 
   
@@ -143,8 +139,7 @@
             <div class="countdown styled"></div>
           </div>
         </div>
-        <div class="countdown-btn half-width"> <a href="#" class="btn btn-lg btn-danger" data-toggle="modal" >Register Today</a> </div>
-        <!--<div class="countdown-btn half-width"> <a href="#" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#registration_form" >Register Today</a> </div>-->
+        <div class="countdown-btn half-width"> <a href="#registration" class="btn btn-lg btn-danger js-target-scroll" data-toggle="modal">Register Today</a> </div>
       </div>
     </div>
   </div>
@@ -163,7 +158,7 @@
         <div class="about-sec">
           <div class="about-content">
             <h2>About</h2>
-            <p> The IEEE Vehicular Technology Society (VTS) Japan Chapter, Singapore Chapter, Taipei Chapter, and Seoul Chapter are cooperatively hosting Asia Pacific Wireless Communications Symposium (APWCS) every year.<br>This symposium aims at providing the platform for researchers from the Asia Pacific area to share fresh results, call for comments or collaborations and exchange innovative ideas of the leading edge research in wireless technologies.</p>
+            <p> The IEEE Vehicular Technology Society (VTS) Japan Chapter, Seoul Chapter, Singapore Chapter, and Taipei Chapter are cooperatively hosting Asia Pacific Wireless Communications Symposium (APWCS) every year. <br> This symposium aims at providing the platform for researchers from the Asia Pacific area to share fresh results, call for comments or collaborations and exchange innovative ideas of the leading edge research in wireless technologies.</p>
           </div>
         </div>
       </div>
@@ -175,13 +170,20 @@
           <div class="carousel slide" id="aboutCarousel" data-ride="carousel"> 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active"><img src=" assets/images/450x570.jpg" alt="" class="center-block"></div>
-              <div class="item"><img src=" assets/images/450x570.jpg" alt="" class="center-block"></div>
-              <div class="item"><img src=" assets/images/450x570.jpg" alt="" class="center-block"></div>
+              <div class="item active"><img src=" assets/images/carousel_9.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_2.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_3.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_4.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_5.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_6.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_7.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_8.png" alt="" class="center-block"></div>
+              <div class="item"><img src=" assets/images/carousel_1.png" alt="" class="center-block"></div>
             </div>
             
             <!-- Left and right controls --> 
-            <a class="left carousel-control" href="#aboutCarousel" role="button" data-slide="prev"> <span class="fa fa-angle-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#aboutCarousel" role="button" data-slide="next"> <span class="fa fa-angle-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+            <a class="left carousel-control" href="#aboutCarousel" role="button" data-slide="prev"> <span class="fa fa-angle-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> 
+			<a class="right carousel-control" href="#aboutCarousel" role="button" data-slide="next"> <span class="fa fa-angle-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
         </div>
       </div>
       <!-- /Carousel Slider --> 
@@ -202,10 +204,28 @@
 					  </div>
 					  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 						<div class="panel-body">
-						  <p>It is our great pleasure to welcome you to the 14th IEEE Vehicular Technology Society Asia Pacific Wireless Communications Symposium (IEEE VTS APWCS 2017) to be held at Incheon National University campus in Incheon Songdo International City, a City Embracing the Future.<br>
-		APWCS 2017 is technically sponsored by the IEEE VTS, and jointly sponsored by the IEEE VTS Seoul Chapter, Japan Chapter, Taipei Chapter, and Singapore Chapter. APWCS has pursued promoting information exchange and improving collaboration among researchers, scholars, engineers, and leaders working in the wireless communications field, especially, across Asia and Pacific Regions.<br>
-		This year, APWCS celebrates its 14th year and the enthusiasm of the Technical Program Committee (TPC) created an excellent technical program with special sessions demonstrating the state of the art, and invited talks to be given by brilliant experts in wired and wireless communications. We are grateful for the efforts of all TPC members. Also, we would like to thank to the Organizing Committee members, the invited speakers, the special session organizers, the reviewers, the APWCS Board of Governors, and, last but not least, the authors for their contribution and support.<br>
-		We hope you will enjoy the technical program, make friendship and experience the cultural varieties of Korea, here, in Incheon Songdo.</p>
+						  <p>On behalf of the Organizing Committee, it is our great pleasure to welcome you to the 15th IEEE Vehicular Technology Society Asia Pacific Wireless Communications Symposium (IEEE VTS APWCS 2018) to be held on August 22th to 24th, 2018, at National Chiao Tung University, Hsinchu, the Silicon Valley of Taiwan.<br><br>
+APWCS 2018 is technically sponsored by the IEEE VTS, and jointly sponsored by the IEEE VTS Japan Chapter, Seoul Chapter, Singapore Chapter, and Taipei Chapter. APWCS has pursued promoting information exchange and improving collaboration among researchers, scholars, engineers, and leaders working in the wireless communications field, especially, across Asia and Pacific Regions.<br><br>
+This year, with the greatest efforts from our Technical Program Committee (TPC), we celebrate the 15th year of APWCS with excellent technical programs on wireless communications and networking.  The keynote and invited speeches will reveal the emerging technologies and future research trends; while the technical sessions demonstrate the state-of-art research by distinguished researchers. We are grateful for the efforts from all our TPC members. <br><br>
+Also, we would like to show our appreciation to the Organizing Committee Members, the keynote and invited speakers, the paper reviewers, the APWCS Board of Governors, and, last but not least, the authors for their great contribution and support. We hope you will enjoy the technical programs and social activities in APWCS 2018. We believe you will have a fantastic experience enjoying the mixed technological and cultural varieties of Hsinchu, Taiwan.<br>
+</p>        
+            <p><br>
+            <b>Kai-Ten Feng</b> (General Chair) <br>
+            <i>National Chiao Tung University, Taiwan</i> <br>
+
+            <b>Jwo-Yuh Wu</b> (General Vice Chair) <br>
+            <i>National Chiao Tung University, Taiwan</i> <br>
+
+            <b>Tomoaki Ohtsuki</b> (General Co-Chair) <br>
+            <i>Keio University, Japan</i> <br>
+
+            <b>Een-Kee Hong</b> (General Co-Chair) <br>
+            <i>KyungHee University, Korea</i> <br>
+
+            <b>Chau Yuen</b> (General Co-Chair) <br>
+            <i>Singapore University of Technology and Design, Singapore</i> <br>
+            </p>
+
 						</div>
 					  </div>
 					</div>
@@ -216,12 +236,7 @@
 					  </div>
 					  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 						<div class="panel-body">
-						  <p>On behalf of the Technical Program Committee (TPC), it is our great pleasure to welcome you to the 2017 IEEE Vehicular Technology Society Asia Pacific Wireless Communications Symposium (IEEE VTS APWCS 2017) taking place at Incheon National University in Incheon Songdo International City, Republic of Korea.<br>
-		This year, we have organized 2 plenary sessions (one keynote speech and four invited talks), 20 regular oral sessions and 4 special sessions for the symposium.<br>
-		In the plenary sessions, following the symposium traditions, we have invited Dr. Kyungwhoon Cheun (Executive Vice President, Next Generation Communications Business Team, IT and Mobile Communications Division, Samsung Electronics Co., Ltd, Korea) as a keynote speaker, from Seoul Chapter, and invited four speakers, Prof. Heung-No Lee (Gwangju Institute of Science and Technology, Korea), Dr. Sun Sumei (Institute for Infocomm Research (I2R), Singapore), Prof. Li-Chun Wang (National Chiao Tung University, Taiwan), and Mr. Akira Matsunaga (Senior Director, Mobile Network Technical Development Division Technology Sector, KDDI Corporation, Japan) for the invited talks. They will give us exciting and inspiring presentations on wide views of current and future wireless communication systems.<br>
-		We have selected 95 outstanding papers, including 18 invited papers for the special sessions. After extensive and strict peer-reviews, we have accepted 77 high-quality papers that cover a broad range of important and timely issues related to state-of-art wireless communications technologies. These papers have been grouped into 20 sessions. We have also organized 4 special sessions comprising of 18 invited papers aiming at sharing the ideas of new technical trends among all the participants in the symposium.<br>
-		The technical program would not be possible without voluntary support from an outstanding team of colleagues that we would like to strongly thank.<br>
-		Of course, making a successful symposium is not possible without active participation of the paper authors. We would like to express our gratitude to them for having decided to share their valuable ideas and contributions with other participants from the community. Finally, we would like to express our gratitude to the IEEE VTS APWCS 2017 Organizing Committee members for their full support.</p>
+						  <p>Welcome message2</p>
 						</div>
 					  </div>
 					</div>
@@ -234,14 +249,14 @@
 <!-- /About Conference--> 
 
 <!-- Call for paper -->
-<section class="primary-bg less-padding">
+<section id="cfp" class="primary-bg less-padding">
     <div class="container" >   
         <div class="row"> 
 		  <!-- Heading -->
 		  <div class="col-md-12">
 			<div class="heading-sec">
 			  <div class="section-header text-center">
-				<h2>Call for paper</h2>
+				<h2>Call for Paper</h2>
 			  </div>
 			</div>
 		  </div>
@@ -251,7 +266,7 @@
 				<div class="heading-sec text-center">
 					<br><b><h6>Paper Submission Guideline</h6></b>
 					<p>Submission format of the paper is "PDF Format" (up to 5 pages) with the standard IEEE format.<br>
-			Standard IEEE Conference templates for Microsoft Word or LaTeX formats can be found at: <a style="color: #222222" href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html"><b>HERE</b></a></p>
+			Standard IEEE Conference templates for Microsoft Word or LaTeX formats can be found at: <a style="color: #222222" href="https://www.ieee.org/conferences_events/conferences/publishing/templates.html"><b>HERE</b></a></p>
 				</div>
 			</div>
 			
@@ -260,16 +275,16 @@
 </section>
 <!-- Call for paper -->
 
-<!--Conference Gallery-->
-<section class="secondary-bg vc_row">
-	<div class="col-md-6 vc_col  text-center">
-		<div class="vc_column-inner less-padding">
+<!--Submission-->
+<section id="submission" class="secondary-bg vc_row">
+	<div class="col-md-6 vc_col less-padding">
+		<div class="vc_column-inner">
 			<div class="conference-start-box width50-right">
-				<h2>Submission</h2>
+				<h3>Submission</h3>
 				<div class="heading-sec">
 					<b><h5>Guidelines</h5></b>
 					<p>Authors are invited to submit full paper (5 pages) or extended abstract (2 pages) in PDF with the standard IEEE format.<br>
-					All papers must be submitted electronically, in PDF format, and uploaded on EDAS. The direct link for paper submission is <a style="color: #222222"  href="https://edas.info/newPaper.php?c=23348"><b>HERE</b></a></p>
+					All papers must be submitted electronically, in PDF format, and uploaded on EDAS. The direct link for paper submission is <a style="color: #f76d2b"  href="https://edas.info/newPaper.php?c=23348"><b>HERE</b></a></p>
 					<br><b><h5>Important Dates</h5></b>
 					<p>Paper Submission : TBA<br>
 					Acceptance Notification : TBA<br>
@@ -289,19 +304,20 @@
     <div class="red-overlay"></div>
   </div>   
 </section>
-<!--/Conference Gallery-->
+<!--/Submission-->
 
 <!-- Conference info -->
-<section id="conference" class="conference secondary-bg vc_row">
+<section id="registration" class="conference secondary-bg vc_row">
 	<div class="col-md-6 vc_col less-padding">
 		<div class="vc_column-inner">
 			<div class="conference-start-box width50-right">
-			<h3>Registration Fee</h3>
+			<h3>Registration</h3>
+			<h5>Registration form</h5>
 			<div class="spekers-tickets-box">
 			  <div class="spekers-tickets-info" > <i class="fa fa-download" aria-hidden="true"></i> <span class="summary" ><a href="#">PDF</a></span> </div>
 			  <div class="spekers-tickets-info" > <i class="fa fa-file" aria-hidden="true"></i> <span class="summary"><a href="#">DOC</a></span> </div>
 			</div>
-			<h6>Registration Deadline : July 20, 2017.</h6>
+			<h6>Registration Deadline : TBA</h6>
 			<!--<table align="center" border="1" cellspacing="0" width="100%" bordercolordark="white" bordercolorlight="black">
 				<tr>
 					<td >
@@ -356,13 +372,13 @@
 				</tr>
 			</table>-->
 			<!--<div id="readmore-register" class="collapse">-->
-				<p>
-					AT LEAST ONE AUTHOR of each paper should register for the conference with FULL REGISTRATION.<br>
-					ONE FULL REGISTRATION covers ONLY ONE PAPER which you coauthor.<br>
-					If the registrant is a coauthor to multiple papers, each of the papers must have different full registrations associated with them.<br>
-					The paper may not be included in the proceedings if none of the authors of the paper are registered under a full registration.<br>
-					Each registration fee includes proceeding (USB) & program abstract, lunches, and conference banquet.<br>
-				</p>
+			<p>
+				AT LEAST ONE AUTHOR of each paper should register for the conference with FULL REGISTRATION.<br>
+				ONE FULL REGISTRATION covers ONLY ONE PAPER which you coauthor.<br>
+				If the registrant is a coauthor to multiple papers, each of the papers must have different full registrations associated with them.<br>
+				The paper may not be included in the proceedings if none of the authors of the paper are registered under a full registration.<br>
+				Each registration fee includes proceeding (USB) & program abstract, lunches, and conference banquet.<br>
+			</p>
 			<!--</div>
 			<button type="button" class="btn" data-toggle="collapse" data-target="#readmore-register" >Read more</button>-->
 			</div>
@@ -376,16 +392,15 @@
 			<h3>Payment</h3>
 			<p><b>There is NO online registration. Please download a copy of the registration form and follow the instructions given</b></p>
 			<ul>
-				<li>Attendees from Japan please submit payment to the APWCS 2017 Japanese bank account in Japanese yen.</li>
-				<li>Attendees from Taiwan please submit payment to the APWCS 2017 Taiwanese bank account in new Taiwan dollars.</li>
-				<li>Attendees from Singapore please submit payment to the APWCS 2017 Singapore bank account in Singapore dollars.</li>
-				<li>Attendees from Korea and other countries/regions please submit payment to the APWCS 2017 Korean bank account in Korean won.</li>
+				<li>Attendees from Japan please submit payment to the APWCS 2018 Japanese bank account in Japanese yen.</li>
+				<li>Attendees from Korea please submit payment to the APWCS 2018 Korean bank account in Korean won.</li>
+				<li>Attendees from Singapore please submit payment to the APWCS 2018 Singapore bank account in Singapore dollars.</li>
+				<li>Attendees from Taiwan and other countries/regions please submit payment to the APWCS 2018 Taiwan bank account in new Taiwan dollars.</li>
 				<li>Note: If short message is allowed with payment, please mark the paper number, registrant name, and registration type.</li>
 			</ul>
 			<h3>Cancellation Policy</h3>
 			<p>
 				Cancellation of a registration must be notified in writing to corresponding finance co-chair. <br>
-				Cancellations prior to 1 August 2017 will receive a full refund less KRW 50,000 administration fee. No refund will be given for cancellation after 1 August 2017.
 			</p>
 			</div>
 		</div>
@@ -393,23 +408,23 @@
 </section>
 <!-- /Conference info --> 
 
-<!-- Pricinig -->
+<!-- Pricing -->
 <section id="pricing" class="registration-price less-padding">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-xs-12 pricing_wrap">
         <div class="regi-price-table border-box">
           <div class="table-price-box secondary-bg">
-            <h5> Suggested </h5>
+            <h5> Singapore </h5>
             <div class="regi-price-box">
-              <p> $50</p>
+              <p> SGD</p>
             </div>
           </div>
           <div class="table-price-detail">
             <ul>
-              <li><i class="fa fa-check" aria-hidden="true"></i>SGD 300</li>
-              <li><i class="fa fa-graduation-cap" aria-hidden="true"></i>SGD 220</li>
-              <li><i class="fa fa-times" aria-hidden="true"></i>SGD 300</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>Full Reg. 300</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i>Student Reg. 220</li>
+              <li><i class="fa fa-times" aria-hidden="true"></i>No-paper Reg. 300</li>
             </ul>
           </div>
         </div>
@@ -417,16 +432,16 @@
       <div class="col-sm-6 col-xs-12 pricing_wrap">
         <div class="regi-price-table border-box">
           <div class="table-price-box secondary-bg">
-            <h5> Suggested </h5>
+            <h5> Japan </h5>
             <div class="regi-price-box">
-              <p> $50</p>
+              <p> JPY </p>
             </div>
           </div>
           <div class="table-price-detail">
             <ul>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Seat</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Likes the talk</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Show support</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>Full Reg. 23,000</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i>Student Reg. 17,000</li>
+              <li><i class="fa fa-times" aria-hidden="true"></i>No-paper Reg. 23,000</li>
             </ul>
           </div>
         </div>
@@ -434,16 +449,16 @@
 	  <div class="col-sm-6 col-xs-12 pricing_wrap">
         <div class="regi-price-table border-box">
           <div class="table-price-box secondary-bg">
-            <h5> Suggested </h5>
+            <h5> Korea </h5>
             <div class="regi-price-box">
-              <p> $100</p>
+              <p> KRW </p>
             </div>
           </div>
           <div class="table-price-detail">
             <ul>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Seat</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Likes the talk</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Show support</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>Full Reg. 260,000</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i>Student Reg. 190,000</li>
+              <li><i class="fa fa-times" aria-hidden="true"></i>No-paper Reg. 260,000</li>
             </ul>
           </div>
         </div>
@@ -451,30 +466,30 @@
 	  <div class="col-sm-6 col-xs-12 pricing_wrap">
         <div class="regi-price-table border-box">
           <div class="table-price-box secondary-bg">
-            <h5> Suggested </h5>
+            <h5> Taiwan </h5>
             <div class="regi-price-box">
-              <p> $150</p>
+              <p> TWD</p>
             </div>
           </div>
           <div class="table-price-detail">
             <ul>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Seat</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Likes the talk</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i>Show support</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>Full Reg. 7,000</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i>Student Reg. 5,200</li>
+              <li><i class="fa fa-times" aria-hidden="true"></i>No-paper Reg. 7,000</li>
             </ul>
           </div>
         </div>
       </div>
       <!--<div class="clearfix"></div>-->
-      <!--<div class="regi-price-btn-box"> <a href="#" class="btn btn-lg-boder-r" data-toggle="modal" data-target="#registration_form" >Register Today</a> </div>-->
+      <!--<div class="regi-price-btn-box"> <a href="#" class="btn btn-lg-boder-r" data-toggle="modal" data-target="#registration_form" >Register Today</a> </div> -->
     </div>
 	
   </div>
 </section>
-<!-- /Pricinig --> 
+ <!--Pricinig --> 
 
 <!-- Committees -->
-<section id="schedule" class="conference-schedule less-padding secondary-bg">
+<section id="committees" class="conference-schedule less-padding secondary-bg">
   <div class="container">
   <div class="row"> 
     <!-- Heading -->
@@ -490,8 +505,7 @@
   <div class="row">
     <div class="col-sm-12 col-lg-12">
     <div id="my-tab-content" class="tab-content"> 
-      <!--Day 0 schedule-->
-      <div class="tab-pane active" id="day0">
+      <div class="tab-pane active">
       <div class="conference-time-list">
         <div class="conf-user-info">
         <h5 style="font-size:35px">Organizing Committee</h5>
@@ -499,56 +513,42 @@
         <div role="tabpanel" class="collapse" id="collapse01" aria-expanded="false" >
           <div class="conf-user-content">
            <h6 style="font-size:30px;">General Chair</h6>
-           <p style="font-size:20px">Jun Heo (Korea Univ., Korea)</p>
+           <p style="font-size:20px"><b>Kai-Ten Feng</b> (Nat’l Chiao Tung Univ., Taiwan)</p>
 
-           <h6 style="font-size:30px;">General Co-Chairs</h6>
-           <p style="font-size:20px">
-           Hung-Yu Wei (Nat’l Taiwan Univ., Taiwan)<br>
-           Boon-Hee Soong (NTU, Singapore)<br>
-                     Seiichi Sampei (Osaka Univ., Japan)</p>
+           <h6 style="font-size:30px;">General Vice Chair</h6>
+           <p style="font-size:20px"><b>Jwo-Yuh Wu</b> (Nat’l Chiao Tung Univ., Taiwan)</p>
 
-           <h6 style="font-size:30px;">Special Session Chair</h6>
-           <p style="font-size:20px">Jae-Hyun Kim (Ajou Univ., Korea)</p>
+		   <h6 style="font-size:30px;">General Co-Chairs</h6>
+           <p style="font-size:20px"><b>Prof. Tomoaki Ohtsuki</b> (Keio Univ., Japan)<br>
+           <b>Prof. Een-Kee Hong</b> (KyungHee Univ., Korea)<br>
+           <b>Prof. Chau Yuen</b> (Singapore Univ. of Technology and Design, Singapore)</p>
 
            <h6 style="font-size:30px;">Finance Chair</h6>
-           <p style="font-size:20px">Ji-Hoon Yun (Seoul Nat’l Univ. of Sci. & Tech., Korea)</p>
+           <p style="font-size:20px"><b>Po-Hsuan Tseng</b> (Nat’l Taipei Univ. of Technology, Taiwan)</p>
 
-           <h6 style="font-size:30px;">Finance Co-Chairs</h6>
-           <p style="font-size:20px">
-           Takahiro Asai (NTT DoCoMo, Japan)<br>
-           Meng-Lin Ku (Nat’l Central Univ., Taiwan)<br>
-           Chin-Sean Sum (Wi-SUN Alliance, Singapore)</p>
+		   <h6 style="font-size:30px;">Finance Co-Chairs</h6>
+           <p style="font-size:20px"><b>Dr. Takahiro Asai</b> (NTT DoCoMo, Japan)<br>
+		   <b>Prof. Seung-Hoon Hwang</b> (Dongguk Univ., Korea)<br>
+		   <b>Dr. Chen Qian</b> (Institute for Infocomm Research, Singapore)</p>
 
            <h6 style="font-size:30px;">Publicity Chair</h6>
-           <p style="font-size:20px">Seung-Hoon Hwang (Dongguk Univ., Korea)</p>
+           <p style="font-size:20px"><b>Borching Su</b> (Nat’l Taiwan Univ., Taiwan)</p>
 
-           <h6 style="font-size:30px;">Publicity Co-Chairs</h6>
-           <p style="font-size:20px">
-           AkinoriTaira(Mitsubishi Electric Corporation, Japan)<br>
-           Chun-Hung Liu (Nat’l ChiaoTung Univ., Taiwan)<br>
-           Qian Chen (I2R, Singapore)<br>
-           Mitsuru Uesugi (Panasonic Corporation, Japan)</p>
+		   <h6 style="font-size:30px;">Publicity Co-Chairs</h6>
+           <p style="font-size:20px"><b>Oh-Soon Shin</b> (Soongsil Univ., Korea) <br>
+		   <b>Prof. Kazunori Hayashi</b> (Osaka City Univ., Japan)<br>
+		   <b>Dr. Sum-Chin Sean</b> (Wi-SUN Alliance, Singapore)</p>
+
+           <h6 style="font-size:30px;">Publicity Vice Chair</h6>
+           <p style="font-size:20px"><b>Jen-Jee Chen</b> (Nat’l Tainan Univ., Taiwan)</p>
 
            <h6 style="font-size:30px;">Publication Chair</h6>
-           <p style="font-size:20px">
-           Jin Young Kim (Kwangwoon Univ., Korea)</p>
+           <p style="font-size:20px"><b>Chung-Hsuan Wang</b> (Nat’l Chiao Tung Univ., Taiwan)</p>
 
-           <h6 style="font-size:30px;">Publication Vice Chair</h6>
-           <p style="font-size:20px">
-           Joongheon Kim (Chung-Ang Univ., Korea)</p>
-
-           <h6 style="font-size:30px;">Local Arrangement Co-Chairs</h6>
-           <p style="font-size:20px">
-           Hoon Kim (Incheon Nat’l Univ., Korea)<br>
-           Sungtek Kahng (Incheon Nat’l Univ., Korea)</p>
-
-           <h6 style="font-size:30px;">Local Arrangement Vice Chair</h6>
-           <p style="font-size:20px">
-           Junsu Kim (Korea Polytechnic Univ., Korea)</p>
           </div>
         </div>
-        </div>
       </div>
+	  </div>
       <div class="conference-time-list">
         <div class="conf-user-info">
         <h5 style="font-size:35px">Technical Program Committee</h5>
@@ -556,18 +556,17 @@
         <div role="tabpanel" class="collapse" id="collapse02" aria-expanded="false" style="height: 0px;">
           <div class="conf-user-content">
            <h6 style="font-size:30px;">Technical Program Committee Chair</h6>
-           <p style="font-size:20px">Een-Kee Hong (KyungHee Univ., Korea)</p>
+           <p style="font-size:20px"><b>Jen-Ming Wu</b> (Nat’l Tsing Hua Univ., Taiwan)</p>
 
            <h6 style="font-size:30px;">Technical Program Committee Vice Chair</h6>
-           <p style="font-size:20px">Oh-Soon Shin (Soongsil Univ., Korea)</p>
-
-           <h6 style="font-size:30px;">Technical Program Committee Co-chairs</h6>
-           <p style="font-size:20px">
-           Kai-Ten Feng (Nat’l ChiaoTung Univ., Taiwan)<br>
-           Chau Yuen (SUTD, Singapore)<br>
-                     Mamoru Sawahasi (Tokyo City Univ., Japan)</p>
+           <p style="font-size:20px"><b>Chiao-En Chen</b> (Nat’l Chung Cheng Univ., Taiwan)</p>
+		   
+		   <h6 style="font-size:30px;">Technical Program Committee Co-Chairs</h6>
+           <p style="font-size:20px"><b>Dr. Hidekazu Murata</b> (Kyoto Univ., Japan)<br>
+           <b>Prof. Jae-Hyun Kim</b> (Ajou Univ., Korea)<br>
+           <b>Prof. Wang Ping</b> (Nanyang Technological Univ., Singapore)</p>
           </div>
-         </div>
+        </div>
         </div>
       </div>
       <div class="conference-time-list">
@@ -576,25 +575,21 @@
         <a href="#collapse03" data-toggle="collapse" role="button" class="collapsed conf-close" aria-expanded="false"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
         <div role="tabpanel" class="collapse" id="collapse03" aria-expanded="false" style="height: 0px;">
           <div class="conf-user-content">
-          <p style="font-size:20px"> 
-          Fumiyuki Adachi (Tohoku Univ., Japan)<br>
-          Youngnam Han (KAIST, Korea)<br>
-          Takeshi Hattori (Sophia Univ., Japan)<br>
-          Nak-Myeong Kim (EwhaWomans Univ., Korea)<br>
-          Jae Hong Lee (Seoul Nat’l Univ., Korea)<br>
-          Ying-Chang Liang (I2R, Singapore)<br>
-          Seiichi Sampei (Osaka Univ., Japan)<br>
-          SumeiSun (I2R, Singapore)<br>
-          Yu-Chee Tseng (Nat’l ChiaoTung Univ., Taiwan)<br>
-          Li Chun Wang (Nat’l ChiaoTung Univ., Taiwan)
-          </p>
-          </div>
+           <p style="font-size:20px"><b>Fumiyuki Adachi</b> (Tohoku Univ., Japan) <br>
+           <b>Youngnam Han</b> (KAIST, Korea)<br>
+           <b>Takeshi Hattori</b> (Sophia Univ., Japan)<br>
+           <b>Nak-Myeong Kim</b> (Ewha Womans Univ., Korea) <br>
+           <b>Jae Hong Lee</b> (Seoul Nat’l Univ., Korea) <br>
+           <b>Ying-Chang Liang</b> (Institute for Infocomm Research, Singapore)<br>
+           <b>Seiichi Sampei</b> (Osaka Univ., Japan)<br>
+           <b>Sumei Sun</b> (Institute for Infocomm Research, Singapore)<br>
+           <b>Yu-Chee Tseng</b> (Nat’l Chiao Tung Univ., Taiwan) <br>
+           <b>Li-Chun Wang</b> (Nat’l Chiao Tung Univ., Taiwan) 
+           </p>
         </div>
         </div>
       </div>
       </div>
-      <!--/Day 0 schedule--> 
-    </div>
     </div>
   </div>
   </div>
@@ -626,12 +621,10 @@
           </ul>
         </div>
         <div id="my-tab-content" class="tab-content"> 
-          <!--Day 1 schedule-->
+          <!--Day 1 schedule
           <div class="tab-pane active" id="day1">
             <div class="conference-time-list" style="border: 0px;">
               <div class="conf-user-info" style="padding: 0px;">
-               <!-- <h5>2018/8/22 Program</h5>
-                <h6>Day 1 program at a glance</h6>-->
 
                   <div class="conf-user-content">
                     <style type="text/css">
@@ -666,12 +659,10 @@
           </div>  
           <!--/Day 1 schedule--> 
           
-          <!--Day 2 schedule-->
+          <!--Day 2 schedule
           <div class="tab-pane" id="day2">
             <div class="conference-time-list" style="border: 0px;">
               <div class="conf-user-info" style="padding: 0px;">
-                <!-- <h5>2018/8/23 Program</h5>
-                <h6>Day 2 program at a glance</h6>-->
                 <div class="conf-user-content">
                     <style type="text/css">
                       table{
@@ -761,12 +752,10 @@
           </div>
           <!--/Day 2 schedule--> 
           
-          <!--Day 3 schedule-->
+          <!--Day 3 schedule
           <div class="tab-pane" id="day3">
             <div class="conference-time-list" style="border: 0px;">
               <div class="conf-user-info" style="padding: 0px;">
-                <!-- <h5>2018/8/24 Program</h5>
-                <h6>Day 3 program at a glance</h6>-->
                 <div class="conf-user-content">
                     <style type="text/css">
                       table{
@@ -861,6 +850,7 @@
       </div>
     </div>
   </div>
+  
 </section>
 <!-- /Schedule --> 
 
@@ -889,9 +879,9 @@
             </div>
           </div>
           <div class="speaker-info">
-            <h5><a >Prof. Heung-No Lee</a></h5>
-            <h6>Gwangju Institute of Science and Technology<br>
-			<b>The 4th Industrial Revolution and Our Strategy for a Better World</b></h6>
+            <h5><a>TBA</a></h5>
+            <h6>TBA<br>
+			<b>TBA</b></h6>
           </div>
         </div>
       </div>
@@ -904,8 +894,9 @@
             </div>
           </div>
           <div class="speaker-info">
-            <h5><a>Dr. Sun Sumei</a></h5>
-            <h6>Institute for Infocomm Research (I2R)<br><b>Industrial Internet of Things</b></h6>
+            <h5><a>TBA</a></h5>
+            <h6>TBA<br>
+			<b>TBA</b></h6>
           </div>
         </div>
       </div>
@@ -918,8 +909,9 @@
             </div>
           </div>
           <div class="speaker-info">
-            <h5><a>Mr. Akira Matsunaga</a></h5>
-            <h6>Mobile Network Technical Development Division Technology Sector KDDI Corporation<br><b>TBA</b></h6>
+            <h5><a>TBA</a></h5>
+            <h6>TBA<br>
+			<b>TBA</b></h6>
           </div>
         </div>
       </div>
@@ -930,7 +922,7 @@
 <!-- /Speakers --> 
 
 <!-- Keynote-->
-<section  id="about" class="about-section less-padding secondary-bg">
+<section  id="keynote" class="about-section less-padding secondary-bg">
   <div class="container">
     <div class="row"> 
       <!-- About Content -->
@@ -941,7 +933,12 @@
             <h5>Abstract </h5>
 			<p>TBA</p>
 			<h5>Biography </h5>
-			<p>Dr. Kyungwhoon Cheun received his B.S. degree in Electronics Engineering from Seoul National University in 1985. He earned his M.S. and Ph.D. degrees from the University of Michigan, Ann Arbor in 1987 and 1989, respectively.</p>
+			<p>15 years of experience in wireless communication research and 14 years of experience in cellular SOC design/implementation and commercialization. 
+			<br>Led system team for baseband modem chipset design at Broadcom and drove team’s innovations to ensure Broadcom’s solution remain to be competitive in the fast-changing cellular market space. 
+			<br>Hands-on in managements and has personally driven the advanced receiver designs and baseband technology advancements for Broadcom. 
+			<br>Architect for the HW/SW functional partition, designer for HSDPA/HSUPA data path optimization, and EDGE incremental redundancy.
+			<br>Participated in Broadcom’s modem due diligent activities in acquisitions of WCDMA and WiMax/LTE technologies.
+			<br>Over 80 issued US patents (50+ with Broadcom ), 15+ pending (Broadcom).</p>
           </div>
         </div>
       </div>
@@ -950,17 +947,15 @@
       <!-- Photo -->
       <div class="col-md-4 col-sm-4 ">
 		   <div class="speaker-info-box text-center border-box">
-            <div class="spearker-img"> <img src="assets/images/450x570.jpg" alt="" class="img-responsive center-block"> </div>
+            <div class="spearker-img"> <img src="assets/images/keynote_speaker.jpg" alt="" class="img-responsive center-block"> </div>
             <div class="speaker-hover">
               <div class="social-icons text-center"> <a style="pointer-events: none; cursor: default;"><i class="fa fa-info-circle" aria-hidden="true"></i>
-			  <p>
-				Executive Vice President<br>Next Generation Communications Business Team<br>IT and Mobile Communications Division<br>Samsung Electronics Co., Ltd
-			  </p>
+			  <p>CTO<br>MoEA 5G Planning Office</p>
 			  </a> </div>
             </div>
           </div>
 		  <br>
-		  <h5 class="text-center"> Dr. Kyungwhoon Cheun</h5>
+		  <h5 class="text-center"> Prof. Li-Fung Chang</h5>
       </div>
       <!-- /Photo --> 
 	
@@ -974,66 +969,62 @@
 
 
 <!-- Accommodation -->
-<section id="blog" class="less-padding secondary-bg">
+<section id="accommodation" class="less-padding secondary-bg">
   <div class="container">
     <div class="row">
       <!-- Heading -->
       <div class="col-md-12">
         <div class="heading-sec">
-          <div class="section-header text-center">
-            <h2>Accommodation</h2>
-            <p>For convenient accommodation of the apwcs2017 participants, we provide a list of hotels in the vicinity of the conference venue. Participants staying in these hotel can ride a public bus to reach the conference venue, these hotel are also easily accessible from Incheon international airport via airport limousine shuttle and subway.</p>
+          <div class="section-header ">
+            <h2 class="text-center">Accommodation</h2>
+            <p>Landis Inn Chuhu is our recommended hotel which is within walking distance to conference venue.</p>
           </div>
         </div>
       </div>
       <!-- /Heading --> 
       
-      <div class="col-md-4 col-sm-4">
+      
+	  <div class="col-md-12 col-sm-12">
          <div class="blog_wrap">
+			<div class="col-md-8 col-sm-8">
 	      	<div class="blog_img margin-btm-20">
-                <a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
+                <!--<img src="assets/images/800x510.jpg" alt="image"></a>-->
+				<div class="about-carousel border-box">
+				  <div class="carousel slide" id="accommodationCarousel" data-ride="carousel"> 
+					<!-- Wrapper for slides -->
+					<a> <!--href="http://chuhu.landishotelsresorts.com"-->
+						<div class="carousel-inner">
+						  <div class="item active"><img src=" assets/images/hotel/hotel1.jpg" alt="" class="center-block"></div>
+						  <div class="item"><img src=" assets/images/hotel/hotel2.jpg" alt="" class="center-block"></div>
+						  <div class="item"><img src=" assets/images/hotel/hotel3.jpg" alt="" class="center-block"></div>
+						  <div class="item"><img src=" assets/images/hotel/hotel4.jpg" alt="" class="center-block"></div>
+						  <div class="item"><img src=" assets/images/hotel/hotel5.jpg" alt="" class="center-block"></div>
+						</div>
+					</a>
+					
+					<!-- Left and right controls --> 
+					<a class="left carousel-control" href="#accommodationCarousel" role="button" data-slide="prev"> <span class="fa fa-angle-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> 
+					<a class="right carousel-control" href="#accommodationCarousel" role="button" data-slide="next"> <span class="fa fa-angle-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+				</div>
             </div>
-    	    <div class="blog_meta white-text">
-                <div class="direction-icon"><i class="fa fa-phone"></i><p style="color:white; padding-left:20px">  +886 983-728-321</p></div>
-            </div>
-        	<h5><a style="color: #f76d2b">Oakwood Premier Incheon</a></h5>
-			<p>The Oakwood Premier Incheon Hotel located in the business area of Songdo City in Incheon. Situated in Songdo, Oakwood Premier Incheon Hotel is the perfect place to experience Incheon and its surroundings.</p>
-			<div id="readmore1" class="collapse">
-				  <p>From here, guests can enjoy easy access to all that the lively city has to offer. With its convenient location, the hotel offers easy access to the city's must-see destinations. Offering a restaurant and a fitness center, Oakwood Premier Incheon offers modern apartments with sweeping views of Incheon.Free on-site parking is available and Wi-Fi access is provided at a fee. The hotel has the added benefit of being close to the Incheon International Airport (only 30 minutes away by taxi).</p>
 			</div>
-			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#readmore1">Read more</button>
-         </div>
-      </div>
-	  <div class="col-md-4 col-sm-4">
-         <div class="blog_wrap">
-	      	<div class="blog_img margin-btm-20">
-                <a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
+			<div class="col-md-4 col-sm-4">
+    	    
+			<!-- 暐順 -->
+        	<h5><a style="color: #f76d2b">Landis Inn Chuhu</a></h5>
+			<div class="blog_meta white-text">
+                <div class="direction-icon" style="color:white;"><i class="fa fa-phone"></i><p style="color:white; padding-left:20px">+886-3-571-5888 Ext.2113</p></div>
             </div>
-    	    <div class="blog_meta white-text">
-                <div class="direction-icon"><i class="fa fa-phone"></i><p style="color:white; padding-left:20px">  +886 983-728-321</p></div>
+			<div class="blog_meta white-text">
+                <div class="direction-icon" style="color:white;"><i class="fa fa-map-marker"></i><p> <a style="color:white; padding-left:20px" href="https://www.google.com.tw/maps/place/24.78915,121.0008043,17z/data=!3m1!4b1!4m5!3m4!1s0x346836116f4531ff:0x8460f39d583d58b0!8m2!3d24.78915!4d121.002993" target="_blank"> 300, Hsinchu City, East District, 大學路16號</a></p></div>
             </div>
-        	<h5><a style="color: #f76d2b">Oakwood Premier Incheon</a></h5>
-			<p>The Oakwood Premier Incheon Hotel located in the business area of Songdo City in Incheon. Situated in Songdo, Oakwood Premier Incheon Hotel is the perfect place to experience Incheon and its surroundings.</p>
-			<div id="readmore2" class="collapse">
-				  <p>From here, guests can enjoy easy access to all that the lively city has to offer. With its convenient location, the hotel offers easy access to the city's must-see destinations. Offering a restaurant and a fitness center, Oakwood Premier Incheon offers modern apartments with sweeping views of Incheon.Free on-site parking is available and Wi-Fi access is provided at a fee. The hotel has the added benefit of being close to the Incheon International Airport (only 30 minutes away by taxi).</p>
+			<p>Reservation form will be available online from March 31,2018.</p>
+			<!--<div id="readmore2" class="collapse">
+				<p>Accommodation2 more information</p>
 			</div>
-			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#readmore2">Read more</button>
-         </div>
-      </div>
-	  <div class="col-md-4 col-sm-4">
-         <div class="blog_wrap">
-	      	<div class="blog_img margin-btm-20">
-                <a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
-            </div>
-    	    <div class="blog_meta white-text">
-                <div class="direction-icon"><i class="fa fa-phone"></i><p style="color:white; padding-left:20px">  +886 983-728-321</p></div>
-            </div>
-        	<h5><a style="color: #f76d2b">Oakwood Premier Incheon</a></h5>
-			<p>The Oakwood Premier Incheon Hotel located in the business area of Songdo City in Incheon. Situated in Songdo, Oakwood Premier Incheon Hotel is the perfect place to experience Incheon and its surroundings.</p>
-			<div id="readmore3" class="collapse">
-				  <p>From here, guests can enjoy easy access to all that the lively city has to offer. With its convenient location, the hotel offers easy access to the city's must-see destinations. Offering a restaurant and a fitness center, Oakwood Premier Incheon offers modern apartments with sweeping views of Incheon.Free on-site parking is available and Wi-Fi access is provided at a fee. The hotel has the added benefit of being close to the Incheon International Airport (only 30 minutes away by taxi).</p>
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#readmore2">Read more</button>-->
+			<button type="button" class="btn btn-info" >Reservation form</button>
 			</div>
-			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#readmore3">Read more</button>
          </div>
       </div>
     </div>
@@ -1050,7 +1041,6 @@
         <div class="heading-sec">
           <div class="section-header text-center">
             <h2>Our Sponsors</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           </div>
         </div>
       </div>
@@ -1060,7 +1050,7 @@
       <div class="col-md-12">
         <div class="sponsors-list">
           <ul>
-            <li> <a href="#"><img src="assets/images/250x60.png" alt="sponsors"/></a></li>
+            <li> <a href="#"><img src="assets/images/sponsor/nctu_office_of_research.png" alt="sponsors"/></a></li>
             <li> <a href="#"><img src="assets/images/250x60.png" alt="sponsors"/></a></li>
             <li> <a href="#"><img src="assets/images/250x60.png" alt="sponsors"/></a></li>
             <li> <a href="#"><img src="assets/images/250x60.png" alt="sponsors"/></a></li>
@@ -1074,6 +1064,93 @@
   </div>
 </section>
 <!-- /Sponsors --> 
+
+
+ <!-- Conference Venue -->
+<section id="venue" class="section-padding">
+  <div class="container">
+    <div class="row"> 
+      <!-- Heading -->
+      <div class="col-md-12">
+        <div class="heading-sec">
+          <div class="section-header text-center">
+            <h2>Conference Venue</h2>
+          </div>
+        </div>
+      </div>
+      <!-- /Heading --> 
+    </div>
+    <div class="row">
+	  <div class="col-sm-12">
+		<br>	
+		<div class="col-md-4 col-sm-4">
+			<div class="blog_wrap">
+				<div class="blog_img margin-btm-20">
+					<a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
+				</div>
+			</div>
+			<div class="contact-info-details text-center" >
+				<h6>Building A</h6>
+			</div>
+		</div>	
+		<div class="col-md-4 col-sm-4">
+			<div class="blog_wrap">
+				<div class="blog_img margin-btm-20">
+					<a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
+				</div>
+			</div>
+			<div class="contact-info-details text-center" >
+				<h6>Building B</h6>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4">
+			<div class="blog_wrap">
+				<div class="blog_img margin-btm-20">
+					<a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
+				</div>
+			</div>
+			<div class="contact-info-details text-center" >
+				<h6>Building C</h6>
+			</div>
+		</div>
+      </div>
+	  <div class="col-sm-12">
+        <div class="contact-info-box border-box" style="padding:20px">
+          <div class="contact-info-details col-sm-4" style="padding-bottom:0px">
+            <div class="direction-icon"><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 30px"></i></div>
+            <p ><a href="https://www.google.com.tw/maps/place/%E4%BA%A4%E5%A4%A7/@24.7914486,120.9949699,15z/data=!4m8!1m2!2m1!1zZ29vZ2xlIG1hcCDkuqTlpKc!3m4!1s0x0:0x42677f86a7103d68!8m2!3d24.7892378!4d120.9971952">Hsinchu, Taiwan</a></p>
+          </div>
+          <div class="contact-info-details col-sm-4" style="padding-bottom:0px">
+            <div class="direction-icon"><i class="fa fa-phone" aria-hidden="true" style="font-size: 30px"></i></div>
+            <p><a>(03) 571-2121#31537</a></p>
+          </div>
+          <div class="contact-info-details col-sm-4" style="padding-bottom:0px">
+            <div class="direction-icon"><i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 30px"></i></div>
+            <p><a  href="mailto:steaphytsai@nctu.edu.tw">steaphytsai@nctu.edu.tw</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map 
+  <div id="map" >
+    <div id="js-gmap" class="gmap js-gmap" style="height:350px"></div>
+  </div>
+  <script>
+  var map;
+  function initMap() {
+	map = new google.maps.Map(document.getElementById('ggmap'), {
+		center: {lat: 24.7859146, lng: 120.996735},
+		zoom: 12,
+		animation: google.maps.Animation.DROP
+	});
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUWkVNw8kE8F0lEAeFwbTPoEfo0UcwEjI&callback=initMap"
+async defer></script>
+ Mao --> 
 <!-- FAQ -->
 <section id="faq" class="secondary-bg vc_row">
   <div class="container">
@@ -1116,90 +1193,13 @@
 <!-- /FAQ --> 
 
 
-
-
- <!-- Conference Venue -->
-<section id="venue" class="section-padding">
-  <div class="container">
-    <div class="row"> 
-      <!-- Heading -->
-      <div class="col-md-12">
-        <div class="heading-sec">
-          <div class="section-header text-center">
-            <h2>Conference Venue</h2>
-            <p>Convention Center, Building 12, Incheon National University</p>
-          </div>
-        </div>
-      </div>
-      <!-- /Heading --> 
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="contact-info-box border-box" style="padding:20px">
-          <div class="contact-info-details col-sm-4" style="padding-bottom:0px">
-            <div class="direction-icon"><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 30px"></i></div>
-            <p >Hsinchu Taiwan</p>
-          </div>
-          <div class="contact-info-details col-sm-4" style="padding-bottom:0px">
-            <div class="direction-icon"><i class="fa fa-phone" aria-hidden="true" style="font-size: 30px"></i></div>
-            <p><a href="tel:+886 983-728-321">+886 983-728-321</a></p>
-          </div>
-          <div class="contact-info-details col-sm-4" style="padding-bottom:0px">
-            <div class="direction-icon"><i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 30px"></i></div>
-            <p><a  href="mailto:cober.tsai@gmail.com">cober.tsai@gmail.com</a></p>
-          </div>
-        </div>
-      </div>
-	  <div class="col-sm-12">
-		<br>	
-		<div class="col-md-4 col-sm-4">
-			<div class="blog_wrap">
-				<div class="blog_img margin-btm-20">
-					<a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
-				</div>
-			</div>
-			<div class="contact-info-details text-center" >
-				<h6>Building A</h6>
-			</div>
-		</div>	
-		<div class="col-md-4 col-sm-4">
-			<div class="blog_wrap">
-				<div class="blog_img margin-btm-20">
-					<a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
-				</div>
-			</div>
-			<div class="contact-info-details text-center" >
-				<h6>Building B</h6>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-4">
-			<div class="blog_wrap">
-				<div class="blog_img margin-btm-20">
-					<a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
-				</div>
-			</div>
-			<div class="contact-info-details text-center" >
-				<h6>Building C</h6>
-			</div>
-		</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Map --> 
-  <div id="map" >
-    <div id="js-gmap" class="gmap js-gmap" style="height:350px"></div>
-  </div>
-<!-- Canvas --> 
-    
   <!--Footer-->
 <footer class="secondary-bg">
   <div class="copyright fourth-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>Copyright &copy; 2017 <a href="https://www.facebook.com/cober.tsai" target=_blank>Cober Tsai</a>. All Rights Reserved</p>
+          <p>Copyright &copy; 2018 <a href="https://www.facebook.com/cober.tsai" target=_blank>Cober Tsai</a>. All Rights Reserved</p>
         </div>
       </div>
     </div>
@@ -1216,20 +1216,21 @@
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/interface.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script> 
-<script src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+<!--<script src="https://maps.google.com/maps/api/js?sensor=true"></script> -->
 <script src="assets/js/gmaps.min.js"></script> 
 <script type="text/javascript" src="assets/js/particle-network.js"></script>
-    <script type="text/javascript">
-      var canvasDiv = document.getElementById('particle-canvas');
-      var options = {
-        particleColor: '#888',
-        //background: 'images/home-bg.png',
-        interactive: true,
-        speed: 'slow',
-        density: 'medium'
-      };
-      var particleCanvas = new ParticleNetwork(canvasDiv, options);
-    </script>
+<script type="text/javascript">
+  var canvasDiv = document.getElementById('particle-canvas');
+  var options = {
+	particleColor: '#888',
+	background: 'images/home-bg.png',
+	interactive: true,
+	speed: 'slow',
+	density: 'low'
+  };
+  var particleCanvas = new ParticleNetwork(canvasDiv, options);
+</script>
+
 <!-- Countdown--> 
 <script src="assets/js/jquery.countdown.min.js"></script>
 </body>

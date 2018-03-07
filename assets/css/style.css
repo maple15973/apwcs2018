@@ -584,9 +584,10 @@ nav.navigation ul li .dropdown-menu li {
 
 #banner {
 	background-image:url(../images/home-bg.png);	
+	/*background: transparent;*/ 
 }
 .banner-content h1 {
-	font-size:70px;
+	font-size:48px;
 	color:#fff;
 }
 .banner-fixed {
@@ -1038,16 +1039,16 @@ audio, canvas, progress, video {
 }
 .table-price-box {
 	display:table-cell;
-	padding:44px 21px;
+	padding:30px 21px;
 	vertical-align:top;
-	width:250px;
+	width:200px;
 	text-align:center;
 }
 .table-price-detail {
 	display:table-cell;
-	padding:30px 21px;
+	padding:15px 15px;
 	vertical-align:top;
-	width:281px;
+	#width:100%;
 }
 .table-price-box h5 {
 	color:#ffffff;
@@ -1060,11 +1061,11 @@ audio, canvas, progress, video {
 }
 .regi-price-box p {
 	color:#de302f;
-	font-size:54px;
+	font-size:40px;
 	line-height:50px;
 }
 .table-price-detail ul {
-	padding-left:24px;
+	padding-left:5px;
 	margin:0px;
 }
 .table-price-detail li {
@@ -1073,7 +1074,7 @@ audio, canvas, progress, video {
   font-weight: 300;
   line-height: 32px;
   list-style: outside none none;
-  margin: 24px 0;
+  margin: 15px 0;
 }
 .table-price-detail li .fa {
 	margin-right:8px;
@@ -1728,7 +1729,7 @@ p {
 }
 .table-price-detail li {
   font-size: 22px;
-  margin: 18px 0;
+  margin: 9px 0;
 }
 .sport-video-box > h2 {
   color: hsl(0, 0%, 100%);
@@ -1907,7 +1908,7 @@ h5 {
 	width:100%;
 }
 .regi-price-box p {
-	font-size:44px;
+	font-size:35px;
 	line-height:35px;
 }
 .table-price-detail ul {
@@ -1916,7 +1917,7 @@ h5 {
 .table-price-detail, .table-price-box {
 	display:block;
 	width:100%;
-	padding:22px;
+	padding:15px;
 }
 .table-price-detail li {
 	font-size:22px;
@@ -2487,7 +2488,7 @@ h2 {
 	padding-top:16px;
 }
 .regi-price-box p {
-	font-size:41px;
+	font-size:35px;
 	line-height:42px;
 }
 .table-price-detail ul {

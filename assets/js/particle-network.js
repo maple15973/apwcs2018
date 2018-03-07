@@ -56,8 +56,8 @@
     // Draw particle
     this.ctx.beginPath();
     this.ctx.fillStyle = this.particleColor;
-    this.ctx.globalAlpha = 1;
-    this.ctx.arc(this.x, this.y, 4, 0, 2 * Math.PI);
+    this.ctx.globalAlpha = 0.7;
+    this.ctx.arc(this.x, this.y, 1.5, 0, 2 * Math.PI);
     this.ctx.fill();
   };
 
@@ -74,7 +74,7 @@
     options = options !== undefined ? options : {};
     this.options = {
       particleColor: (options.particleColor !== undefined) ? options.particleColor : '#fff',
-      //background: (options.background !== undefined) ? options.background : '#1a252f',
+      background: (options.background !== undefined) ? options.background : '#1a252f',
       interactive: (options.interactive !== undefined) ? options.interactive : true,
       velocity: this.setVelocity(options.speed),
       density: this.setDensity(options.density)
@@ -105,15 +105,15 @@
     // Else check if valid image
     else if ((/\.(gif|jpg|jpeg|tiff|png)$/i).test(this.options.background)) {
       this.setStyles(this.bgDiv, {
-        //'background': 'url("' + this.options.background + '") no-repeat center',
+        'background': 'url("' + this.options.background + '") no-repeat center',
         'background-size': 'cover'
       });
     }
     // Else throw error
-    /*else {
+    else {
       console.error('Please specify a valid background image or hexadecimal color');
       return false;
-    }*/
+    }
 
     // Check if valid particleColor
     if (!(/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i).test(this.options.particleColor)) {
@@ -129,7 +129,7 @@
     this.canvas.height = this.canvasDiv.size.height;
     this.setStyles(this.canvasDiv, { 'position': 'absolute' });
     this.setStyles(this.canvas, {
-      'z-index': '20',
+      'z-index': '2',
       'position': 'absolute',
       'left': 0
     });
