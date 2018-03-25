@@ -1,3 +1,3 @@
-Sitemap: http://samazin.schwannden.com/sitemap.xml
+Sitemap: https://apwcs2018.nctu.edu.tw/sitemap.xml
 
 User-agent: *

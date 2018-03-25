@@ -7,7 +7,13 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>https://apwcs2018.nctu.edu.tw/</loc>
-  <lastmod>2017-01-15T07:44:47+00:00</lastmod>
+<loc>https://apwcs2018.nctu.edu.tw/</loc>
+<lastmod>2018-03-08T09:13:33+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://apwcs2018.nctu.edu.tw/index.html</loc>
+<lastmod>2018-03-08T09:13:33+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 </urlset>
